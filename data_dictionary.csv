@@ -1,9 +1,0 @@
-Variable,Type,Description,Role
-Amount,Numeric,Total bill amount for a party at a single meal,Original variable
-Tip,Numeric,Tip amount given to the waiter,Original variable
-Gender,Categorical,Gender of the waiter serving the party,Original variable
-Smoker,Categorical,Whether anyone in the party smoked,Original variable
-Day,Categorical,Day of the meal,Original variable
-Time,Categorical,Time of the meal,Original variable
-Partysize,Numeric,Number of people in the party,Original variable
-Tip_Percentage,Numeric,Tip as a percentage of the total bill,Derived variable

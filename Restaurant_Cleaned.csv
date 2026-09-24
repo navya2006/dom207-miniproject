@@ -315,12 +315,12 @@ amount,tip,gender,smoker,day,time,partysize
 19.65,3.1,male,False,saturday,lunch,2
 19.65,2.09,male,True,sunday,dinner,2
 21.56,3.66,female,True,saturday,lunch,3
-28.87,3.67,female,False,sunday,lunch,3
+31.25,3.67,female,False,sunday,lunch,3
 22.01,4.0,male,True,thursday,dinner,4
 19.76,2.21,male,False,saturday,dinner,3
 19.09,3.0,female,False,thursday,dinner,3
 23.9,3.98,male,True,thursday,dinner,3
-33.22,3.89,female,False,thursday,lunch,3
+31.25,3.89,female,False,thursday,lunch,3
 14.56,2.78,female,True,saturday,lunch,2
 19.23,2.01,female,False,saturday,lunch,3
 28.45,2.45,female,False,thursday,dinner,2
@@ -342,7 +342,7 @@ amount,tip,gender,smoker,day,time,partysize
 18.67,2.09,female,False,saturday,dinner,3
 18.09,3.45,female,False,thursday,lunch,3
 21.67,3.0,male,True,thursday,dinner,4
-25.34,2.9,male,False,friday,lunch,3
+28.45,2.9,male,False,friday,lunch,3
 16.37,3.21,female,True,saturday,lunch,2
 19.12,2.22,female,False,thursday,lunch,4
 18.99,3.3,female,False,thursday,lunch,2
@@ -353,6 +353,6 @@ amount,tip,gender,smoker,day,time,partysize
 18.38,3.01,female,False,saturday,dinner,3
 16.69,2.68,male,False,sunday,lunch,3
 22.38,3.01,male,False,sunday,dinner,2
-24.55,2.0,male,False,saturday,lunch,2
+24.55,3.37,male,False,saturday,lunch,2
 20.0,8.2,female,True,sunday,dinner,5
 27.56,3.59,female,True,sunday,dinner,4
