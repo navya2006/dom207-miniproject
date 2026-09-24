@@ -1,0 +1,5 @@
+Variable,Shapiro-Wilk Stat,p-value,Conclusion (alpha=0.05)
+amount,0.7932,0.0,Not Normal (Reject Null)
+tip,0.9094,0.0,Not Normal (Reject Null)
+tip_pct,0.9732,0.0,Not Normal (Reject Null)
+spend_per_person,0.6489,0.0,Not Normal (Reject Null)
