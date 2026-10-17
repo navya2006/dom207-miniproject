@@ -2,3 +2,14 @@
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+.venv/
+MP2/.venv/
+
+# Confidential - client employee data and the course brief are not published
+MP2/data/ITEmp.xlsx
+MP2/specs/MP2Specs.pdf
+
+# Local build scaffolding and the report-assembly notebook - not published
+MP2/src/
+MP2/tools/
+MP2/notebooks/04_build_report.ipynb
