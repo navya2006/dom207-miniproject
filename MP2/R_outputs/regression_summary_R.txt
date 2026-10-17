@@ -1,0 +1,182 @@
+DOM207 MP2 - R regression summary
+====================================================================== 
+
+Call:
+lm(formula = f, data = df)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.77756 -0.22751 -0.02368  0.19765  2.41695 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     1.7620335  0.0853562  20.643  < 2e-16 ***
+c_edu           0.0678340  0.0162700   4.169 3.61e-05 ***
+c_exper         0.0084470  0.0021511   3.927 9.83e-05 ***
+c_ten           0.0184299  0.0050106   3.678 0.000261 ***
+female         -0.1365849  0.0603655  -2.263 0.024091 *  
+married         0.1612052  0.0597021   2.700 0.007168 ** 
+nonprev        -0.0437942  0.0606469  -0.722 0.470564    
+c_dep          -0.0242736  0.0161872  -1.500 0.134367    
+metro           0.1369423  0.0430370   3.182 0.001555 ** 
+norcen         -0.0430865  0.0510216  -0.844 0.398811    
+south          -0.0412494  0.0491976  -0.838 0.402186    
+west            0.0887300  0.0574251   1.545 0.122951    
+itreq           0.0399595  0.0967969   0.413 0.679918    
+itprog         -0.0575215  0.0718437  -0.801 0.423720    
+itqual         -0.1331221  0.0999184  -1.332 0.183372    
+itarch         -0.2909397  0.0606108  -4.800 2.10e-06 ***
+itrd            0.1506949  0.0550212   2.739 0.006388 ** 
+ittech          0.0470145  0.0637769   0.737 0.461368    
+itai           -0.3122349  0.0771681  -4.046 6.04e-05 ***
+itclient       -0.0733850  0.0662115  -1.108 0.268252    
+wrkhm          -0.0844733  0.0640676  -1.319 0.187945    
+c_momed         0.0008628  0.0060968   0.142 0.887516    
+c_daded         0.0015638  0.0053548   0.292 0.770374    
+c_sib           0.0019163  0.0152611   0.126 0.900123    
+c_exper_sq     -0.0004718  0.0001297  -3.637 0.000305 ***
+c_ten_sq       -0.0004191  0.0002437  -1.720 0.086138 .  
+c_edu_sq        0.0052468  0.0020632   2.543 0.011291 *  
+c_edu:female    0.0189140  0.0148834   1.271 0.204392    
+c_edu:c_exper   0.0011380  0.0006386   1.782 0.075383 .  
+female:married -0.2138590  0.0762819  -2.804 0.005253 ** 
+c_edu:metro    -0.0131745  0.0158700  -0.830 0.406854    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.404 on 495 degrees of freedom
+Multiple R-squared:  0.5243,	Adjusted R-squared:  0.4955 
+F-statistic: 18.19 on 30 and 495 DF,  p-value: < 2.2e-16
+
+
+--- HC3 robust coefficient test (preferred model) ---
+
+t test of coefficients:
+
+                  Estimate  Std. Error t value  Pr(>|t|)    
+(Intercept)     1.76203352  0.07937317 22.1994 < 2.2e-16 ***
+c_edu           0.06783401  0.01927611  3.5191 0.0004730 ***
+c_exper         0.00844700  0.00210759  4.0079 7.069e-05 ***
+c_ten           0.01842994  0.00514201  3.5842 0.0003716 ***
+female         -0.13658487  0.06460185 -2.1143 0.0349928 *  
+married         0.16120519  0.06368185  2.5314 0.0116688 *  
+nonprev        -0.04379418  0.06272874 -0.6982 0.4854101    
+c_dep          -0.02427360  0.01541564 -1.5746 0.1159857    
+metro           0.13694226  0.04716038  2.9038 0.0038519 ** 
+norcen         -0.04308652  0.04721811 -0.9125 0.3619499    
+south          -0.04124944  0.04785644 -0.8619 0.3891371    
+west            0.08872996  0.06720404  1.3203 0.1873427    
+itreq           0.03995954  0.14067129  0.2841 0.7764807    
+itprog         -0.05752153  0.06515128 -0.8829 0.3777233    
+itqual         -0.13312206  0.07969760 -1.6703 0.0954843 .  
+itarch         -0.29093967  0.05280125 -5.5101 5.777e-08 ***
+itrd            0.15069490  0.05636162  2.6737 0.0077495 ** 
+ittech          0.04701445  0.06082557  0.7729 0.4399274    
+itai           -0.31223485  0.07970276 -3.9175 0.0001020 ***
+itclient       -0.07338499  0.05978994 -1.2274 0.2202631    
+wrkhm          -0.08447334  0.06902806 -1.2238 0.2216273    
+c_momed         0.00086283  0.00686976  0.1256 0.9001013    
+c_daded         0.00156385  0.00559884  0.2793 0.7801185    
+c_sib           0.00191635  0.01519426  0.1261 0.8996856    
+c_exper_sq     -0.00047177  0.00013081 -3.6066 0.0003418 ***
+c_ten_sq       -0.00041908  0.00026219 -1.5984 0.1105962    
+c_edu_sq        0.00524683  0.00235350  2.2294 0.0262366 *  
+c_edu:female    0.01891405  0.01604539  1.1788 0.2390505    
+c_edu:c_exper   0.00113798  0.00070630  1.6112 0.1077800    
+female:married -0.21385898  0.08475311 -2.5233 0.0119374 *  
+c_edu:metro    -0.01317448  0.01806292 -0.7294 0.4661228    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+--- Model comparison ---
+                model k_params   n r_squared adj_r_squared      aic      bic
+     M1 Human capital        4 526 0.3056709     0.3016805 716.3654 737.6919
+    M2 + Demographics        8 526 0.3789452     0.3705525 665.7024 704.0901
+       M3 + Geography       12 526 0.4062359     0.3935289 650.0654 705.5143
+    M4 + Job function       21 526 0.4863692     0.4660274 591.8072 685.6439
+ M5 Full main effects       24 526 0.4867860     0.4632722 597.3802 704.0128
+      M6 + Quadratics       27 526 0.5127247     0.4873356 576.1000 695.5284
+    M7 + Interactions       31 526 0.5243206     0.4954916 571.4312 707.9208
+
+--- VIF ---
+       variable      VIF          flag
+          c_edu 6.014507 moderate (>5)
+          c_ten 4.213892            ok
+    c_edu:metro 3.947908            ok
+ female:married 3.524181            ok
+       c_ten_sq 3.457794            ok
+         female 2.930045            ok
+        c_exper 2.741559            ok
+        married 2.736158            ok
+       itclient 2.707793            ok
+     c_exper_sq 2.489133            ok
+         itarch 2.422439            ok
+  c_edu:c_exper 2.317992            ok
+           itrd 2.265721            ok
+       c_edu_sq 1.957468            ok
+         ittech 1.825699            ok
+          south 1.764666            ok
+           itai 1.738433            ok
+         itprog 1.680583            ok
+   c_edu:female 1.674510            ok
+          wrkhm 1.598790            ok
+         norcen 1.568631            ok
+           west 1.480146            ok
+         itqual 1.345031            ok
+          c_dep 1.341767            ok
+          itreq 1.314568            ok
+        c_momed 1.227523            ok
+        c_daded 1.224763            ok
+          metro 1.196645            ok
+        nonprev 1.091688            ok
+          c_sib 1.039852            ok
+
+--- Diagnostics ---
+                               test    statistic     p_value
+ Breusch-Pagan (heteroskedasticity)  32.30258782 0.353589656
+     Ramsey RESET (functional form)   6.85764321 0.009097431
+   Jarque-Bera (residual normality) 948.48166209 0.000000000
+                Max Cook's distance   0.09551694          NA
+                conclusion
+             homoskedastic
+              misspecified
+      residuals non-normal
+ no dominating observation
+
+--- Hypotheses ---
+   H                                     hypothesis           term
+  H1                           Education raises pay          c_edu
+  H2 Experience raises pay with diminishing returns        c_exper
+ H2b              The experience profile is concave     c_exper_sq
+  H3                         Firm tenure raises pay          c_ten
+  H4            Women earn less than comparable men         female
+  H5               Married employees earn a premium        married
+  H6                 Metro employees earn a premium          metro
+  H8             Non-privileged employees earn less        nonprev
+  H9                   Working from home lowers pay          wrkhm
+ H9b                     AI-exposed work lowers pay           itai
+ H10                     Mother's education matters        c_momed
+ H11            Education premium differs by gender   c_edu:female
+ H12       Education and experience are complements  c_edu:c_exper
+ H13             Marriage premium differs by gender female:married
+      estimate   robust_se      p_value       verdict
+  0.0678340086 0.019276112 0.0004730110     Supported
+  0.0084469981 0.002107590 0.0000706943     Supported
+ -0.0004717747 0.000130810 0.0003417594     Supported
+  0.0184299392 0.005142005 0.0003716107     Supported
+ -0.1365848739 0.064601854 0.0349927807     Supported
+  0.1612051866 0.063681853 0.0116687572     Supported
+  0.1369422632 0.047160376 0.0038518538     Supported
+ -0.0437941827 0.062728739 0.4854100932 Not supported
+ -0.0844733431 0.069028060 0.2216273402 Not supported
+ -0.3122348519 0.079702757 0.0001020486     Supported
+  0.0008628264 0.006869757 0.9001012932 Not supported
+  0.0189140453 0.016045386 0.2390504736 Not supported
+  0.0011379778 0.000706305 0.1077799548 Not supported
+ -0.2138589775 0.084753110 0.0119373724     Supported
+
+--- Alternative specifications (adjusted R-squared) ---
+M8  HC3 robust SE (same point estimates)      adj-R2 = 0.4955
+M9  DV in levels                              adj-R2 = 0.2475
+M11 1% trimmed salary                         adj-R2 = 0.5426

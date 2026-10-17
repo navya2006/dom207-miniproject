@@ -1,0 +1,5 @@
+"test","statistic","p_value","conclusion"
+"Breusch-Pagan (heteroskedasticity)",32.3025878219916,0.353589655797678,"homoskedastic"
+"Ramsey RESET (functional form)",6.85764321025564,0.00909743114238673,"misspecified"
+"Jarque-Bera (residual normality)",948.481662087936,0,"residuals non-normal"
+"Max Cook's distance",0.0955169350505562,NA,"no dominating observation"
