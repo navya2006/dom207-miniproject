@@ -1,0 +1,218 @@
+DOM207 MP2 - regression summary
+======================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_sal   R-squared:                       0.524
+Model:                            OLS   Adj. R-squared:                  0.495
+Method:                 Least Squares   F-statistic:                     18.19
+Date:                Sat, 17 Oct 2026   Prob (F-statistic):           9.61e-62
+Time:                        15:48:52   Log-Likelihood:                -253.72
+No. Observations:                 526   AIC:                             569.4
+Df Residuals:                     495   BIC:                             701.7
+Df Model:                          30                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept          1.7620      0.085     20.643      0.000       1.594       1.930
+c_edu              0.0678      0.016      4.169      0.000       0.036       0.100
+c_exper            0.0084      0.002      3.927      0.000       0.004       0.013
+c_ten              0.0184      0.005      3.678      0.000       0.009       0.028
+female            -0.1366      0.060     -2.263      0.024      -0.255      -0.018
+married            0.1612      0.060      2.700      0.007       0.044       0.279
+nonprev           -0.0438      0.061     -0.722      0.471      -0.163       0.075
+c_dep             -0.0243      0.016     -1.500      0.134      -0.056       0.008
+metro              0.1369      0.043      3.182      0.002       0.052       0.221
+norcen            -0.0431      0.051     -0.844      0.399      -0.143       0.057
+south             -0.0412      0.049     -0.838      0.402      -0.138       0.055
+west               0.0887      0.057      1.545      0.123      -0.024       0.202
+itreq              0.0400      0.097      0.413      0.680      -0.150       0.230
+itprog            -0.0575      0.072     -0.801      0.424      -0.199       0.084
+itqual            -0.1331      0.100     -1.332      0.183      -0.329       0.063
+itarch            -0.2909      0.061     -4.800      0.000      -0.410      -0.172
+itrd               0.1507      0.055      2.739      0.006       0.043       0.259
+ittech             0.0470      0.064      0.737      0.461      -0.078       0.172
+itai              -0.3122      0.077     -4.046      0.000      -0.464      -0.161
+itclient          -0.0734      0.066     -1.108      0.268      -0.203       0.057
+wrkhm             -0.0845      0.064     -1.319      0.188      -0.210       0.041
+c_momed            0.0009      0.006      0.142      0.888      -0.011       0.013
+c_daded            0.0016      0.005      0.292      0.770      -0.009       0.012
+c_sib              0.0019      0.015      0.126      0.900      -0.028       0.032
+c_exper_sq        -0.0005      0.000     -3.637      0.000      -0.001      -0.000
+c_ten_sq          -0.0004      0.000     -1.720      0.086      -0.001    5.98e-05
+c_edu_sq           0.0052      0.002      2.543      0.011       0.001       0.009
+c_edu:female       0.0189      0.015      1.271      0.204      -0.010       0.048
+c_exper:c_edu      0.0011      0.001      1.782      0.075      -0.000       0.002
+married:female    -0.2139      0.076     -2.804      0.005      -0.364      -0.064
+metro:c_edu       -0.0132      0.016     -0.830      0.407      -0.044       0.018
+==============================================================================
+Omnibus:                      140.001   Durbin-Watson:                   1.927
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              948.482
+Skew:                           0.978   Prob(JB):                    1.10e-206
+Kurtosis:                       9.281   Cond. No.                     2.40e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.4e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+======================================================================
+MODEL COMPARISON
+======================================================================
+                   model  k_params   n  r_squared  adj_r_squared       aic       bic  f_stat  f_pvalue
+        M1 Human capital         4 526     0.3057         0.3017  714.3654  731.4266 76.6016       0.0
+       M2 + Demographics         8 526     0.3789         0.3706  663.7024  697.8248 45.1521       0.0
+          M3 + Geography        12 526     0.4062         0.3935  648.0654  699.2490 31.9694       0.0
+       M4 + Job function        21 526     0.4864         0.4660  589.8072  679.3786 23.9098       0.0
+    M5 Full main effects        24 526     0.4868         0.4633  595.3802  697.7475 20.7022       0.0
+         M6 + Quadratics        27 526     0.5127         0.4873  574.1000  689.2631 20.1947       0.0
+       M7 + Interactions        31 526     0.5243         0.4955  569.4312  701.6555 18.1872       0.0
+M8 M7 with HC3 robust SE        31 526     0.5243         0.4955  569.4312  701.6555 24.2607       0.0
+         M9 DV in levels        31 526     0.2905         0.2475 3190.3484 3322.5728  6.7573       0.0
+M10 Complete-case sample        31 482     0.5284         0.4970  535.6447  665.1610 16.8447       0.0
+   M11 1% trimmed salary        31 514     0.5694         0.5426  383.0231  514.5321 21.2855       0.0
+
+======================================================================
+DIAGNOSTICS
+======================================================================
+                   model                                    test   statistic       p_value                                   conclusion
+       M4 + Job function        Jarque-Bera (residual normality)  691.362376 7.457057e-151                         residuals non-normal
+       M4 + Job function      Breusch-Pagan (heteroskedasticity)   22.657027  3.059473e-01                                homoskedastic
+       M4 + Job function White / Wooldridge (heteroskedasticity)    1.276724  2.798175e-01                                homoskedastic
+       M4 + Job function          Ramsey RESET (functional form)    6.106801  1.379581e-02                                 misspecified
+       M4 + Job function                       RESET, HC3-robust    7.900600  4.941840e-03                                 misspecified
+       M4 + Job function                   Condition number of X  113.973760           NaN elevated, but scale-sensitive: see VIF table
+       M4 + Job function           Cook's D: share > 4/n (max D)    0.051331           NaN     max D = 0.094; no dominating observation
+    M5 Full main effects        Jarque-Bera (residual normality)  701.650833 4.349682e-153                         residuals non-normal
+    M5 Full main effects      Breusch-Pagan (heteroskedasticity)   23.848624  4.122301e-01                                homoskedastic
+    M5 Full main effects White / Wooldridge (heteroskedasticity)    1.217359  2.968481e-01                                homoskedastic
+    M5 Full main effects          Ramsey RESET (functional form)    6.069534  1.408825e-02                                 misspecified
+    M5 Full main effects                       RESET, HC3-robust    7.873580  5.016226e-03                                 misspecified
+    M5 Full main effects                   Condition number of X  114.694545           NaN elevated, but scale-sensitive: see VIF table
+    M5 Full main effects           Cook's D: share > 4/n (max D)    0.051331           NaN     max D = 0.093; no dominating observation
+         M6 + Quadratics        Jarque-Bera (residual normality)  797.611878 6.320935e-174                         residuals non-normal
+         M6 + Quadratics      Breusch-Pagan (heteroskedasticity)   28.368460  3.405694e-01                                homoskedastic
+         M6 + Quadratics White / Wooldridge (heteroskedasticity)    1.805259  1.654550e-01                                homoskedastic
+         M6 + Quadratics          Ramsey RESET (functional form)    6.476027  1.123457e-02                                 misspecified
+         M6 + Quadratics                       RESET, HC3-robust    9.078731  2.585994e-03                                 misspecified
+         M6 + Quadratics                   Condition number of X 2361.957564           NaN elevated, but scale-sensitive: see VIF table
+         M6 + Quadratics           Cook's D: share > 4/n (max D)    0.055133           NaN     max D = 0.093; no dominating observation
+       M7 + Interactions        Jarque-Bera (residual normality)  948.481662 1.096034e-206                         residuals non-normal
+       M7 + Interactions      Breusch-Pagan (heteroskedasticity)   32.302588  3.535897e-01                                homoskedastic
+       M7 + Interactions White / Wooldridge (heteroskedasticity)    1.602587  2.023622e-01                                homoskedastic
+       M7 + Interactions          Ramsey RESET (functional form)    6.857643  9.097431e-03                                 misspecified
+       M7 + Interactions                       RESET, HC3-robust    8.201240  4.186177e-03                                 misspecified
+       M7 + Interactions                   Condition number of X 2402.586704           NaN elevated, but scale-sensitive: see VIF table
+       M7 + Interactions           Cook's D: share > 4/n (max D)    0.062738           NaN     max D = 0.096; no dominating observation
+M8 M7 with HC3 robust SE        Jarque-Bera (residual normality)  948.481662 1.096034e-206                         residuals non-normal
+M8 M7 with HC3 robust SE      Breusch-Pagan (heteroskedasticity)   32.302588  3.535897e-01                                homoskedastic
+M8 M7 with HC3 robust SE White / Wooldridge (heteroskedasticity)    1.602587  2.023622e-01                                homoskedastic
+M8 M7 with HC3 robust SE          Ramsey RESET (functional form)    6.857643  9.097431e-03                                 misspecified
+M8 M7 with HC3 robust SE                       RESET, HC3-robust    8.201240  4.186177e-03                                 misspecified
+M8 M7 with HC3 robust SE                   Condition number of X 2402.586704           NaN elevated, but scale-sensitive: see VIF table
+M8 M7 with HC3 robust SE           Cook's D: share > 4/n (max D)    0.062738           NaN     max D = 0.096; no dominating observation
+
+======================================================================
+PARTIAL-RESIDUAL NON-LINEARITY TESTS
+======================================================================
+regressor  F_stat_quad+cubic  p_value  evidence_of_non-linearity
+    c_edu             0.9141   0.4016                      False
+  c_exper             1.4477   0.2361                      False
+    c_ten             2.2594   0.1055                      False
+    c_dep             0.0186   0.9816                      False
+  c_momed             0.4028   0.6687                      False
+  c_daded             0.0072   0.9928                      False
+    c_sib             1.4260   0.2412                      False
+
+======================================================================
+VIF (preferred)
+======================================================================
+      variable   VIF  tolerance          flag
+         c_edu 6.015      0.166 moderate (>5)
+         c_ten 4.214      0.237            ok
+   metro:c_edu 3.948      0.253            ok
+married:female 3.524      0.284            ok
+      c_ten_sq 3.458      0.289            ok
+        female 2.930      0.341            ok
+       c_exper 2.742      0.365            ok
+       married 2.736      0.365            ok
+      itclient 2.708      0.369            ok
+    c_exper_sq 2.489      0.402            ok
+        itarch 2.422      0.413            ok
+ c_exper:c_edu 2.318      0.431            ok
+          itrd 2.266      0.441            ok
+      c_edu_sq 1.957      0.511            ok
+        ittech 1.826      0.548            ok
+         south 1.765      0.567            ok
+          itai 1.738      0.575            ok
+        itprog 1.681      0.595            ok
+  c_edu:female 1.675      0.597            ok
+         wrkhm 1.599      0.625            ok
+        norcen 1.569      0.637            ok
+          west 1.480      0.676            ok
+        itqual 1.345      0.743            ok
+         c_dep 1.342      0.745            ok
+         itreq 1.315      0.761            ok
+       c_momed 1.228      0.815            ok
+       c_daded 1.225      0.816            ok
+         metro 1.197      0.836            ok
+       nonprev 1.092      0.916            ok
+         c_sib 1.040      0.962            ok
+
+======================================================================
+JOINT TESTS
+======================================================================
+                          block                                                              restriction  F_stat  p_value  significant_at_5pct
+Human capital (edu, exper, ten)                                        c_edu = 0, c_exper = 0, c_ten = 0 19.4026   0.0000                 True
+           Demographic controls                          female = 0, married = 0, nonprev = 0, c_dep = 0  7.9868   0.0000                 True
+            Geographic controls                               metro = 0, norcen = 0, south = 0, west = 0  4.8026   0.0008                 True
+                 IT work-groups                            itreq = 0, itprog = 0, itqual = 0, itarch = 0  7.9282   0.0000                 True
+                   IT divisions                                                     itrd = 0, ittech = 0  4.0128   0.0187                 True
+        Quadratic human capital                               c_exper_sq = 0, c_ten_sq = 0, c_edu_sq = 0  9.0532   0.0000                 True
+                   Interactions c_edu:female = 0, c_exper:c_edu = 0, married:female = 0, metro:c_edu = 0  3.0167   0.0178                 True
+
+======================================================================
+HYPOTHESES
+======================================================================
+ H#                                         hypothesis                            term / restriction        test expected_sign  estimate  std_error  p_value       verdict
+ H1                               Education raises pay                                         c_edu coefficient             +    0.0678     0.0193   0.0004     Supported
+ H2 Experience raises pay but with diminishing returns                                       c_exper coefficient             +    0.0084     0.0021   0.0001     Supported
+H2b              The experience-pay profile is concave                                    c_exper_sq coefficient             -   -0.0005     0.0001   0.0003     Supported
+ H3                    Firm-specific tenure raises pay                                         c_ten coefficient             +    0.0184     0.0051   0.0003     Supported
+ H4                Women earn less than comparable men                                        female coefficient             -   -0.1366     0.0646   0.0345     Supported
+ H5                   Married employees earn a premium                                       married coefficient             +    0.1612     0.0637   0.0114     Supported
+ H6                     Metro employees earn a premium                                         metro coefficient             +    0.1369     0.0472   0.0037     Supported
+ H7    Pay differs across IT work-groups and divisions itreq = 0, itprog = 0, itqual = 0, itarch = 0     joint F             +       NaN        NaN   0.0000     Supported
+H7b           R&D and tech-support divisions shift pay                          itrd = 0, ittech = 0     joint F             +       NaN        NaN   0.0260     Supported
+ H8                 Non-privileged employees earn less                                       nonprev coefficient             -   -0.0438     0.0627   0.4851 Not supported
+ H9     Working from home is associated with lower pay                                         wrkhm coefficient             -   -0.0845     0.0690   0.2210 Not supported
+H9b    AI-exposed IT work is associated with lower pay                                          itai coefficient             -   -0.3122     0.0797   0.0001     Supported
+H10             Parental education and siblings matter                                       c_momed coefficient             +    0.0009     0.0069   0.9001 Not supported
+H11            The education premium differs by gender                                  c_edu:female coefficient             -    0.0189     0.0160   0.2385 Not supported
+H12           Education and experience are complements                                 c_exper:c_edu coefficient             +    0.0011     0.0007   0.1071 Not supported
+H13             The marriage premium differs by gender                                married:female coefficient             -   -0.2139     0.0848   0.0116     Supported
+
+======================================================================
+ECONOMIC MAGNITUDES
+======================================================================
+                                       effect  log_points  pct_effect  p_value
+         Women, unmarried (vs comparable men)     -0.1366    -12.7668   0.0345
+   Women, married (vs comparable married men)     -0.3504    -29.5625   0.0000
+    Married men (vs comparable unmarried men)      0.1612     17.4926   0.0114
+Married women (vs comparable unmarried women)     -0.0527     -5.1292   0.3588
+        One extra year of education (at mean)      0.0678      7.0188   0.0004
+       One extra year of experience (at mean)      0.0084      0.8483   0.0001
+           One extra year of tenure (at mean)      0.0184      1.8601   0.0003
+                               Metro location      0.1369     14.6762   0.0037
+       IT architecture (vs other work-groups)     -0.2909    -25.2439   0.0000
+                              IT R&D division      0.1507     16.2642   0.0075
+                           AI-exposed IT work     -0.3122    -26.8190   0.0001
+
+======================================================================
+FLEXIBLE-MODEL BENCHMARK
+======================================================================
+                                        model  cv_r2
+                             OLS, linear in X 0.4339
+   OLS, quadratics + interactions (M7 design) 0.4581
+Gradient boosting (flexible benchmark, raw X) 0.3617

@@ -1,0 +1,8 @@
+block,restriction,F_stat,p_value,significant_at_5pct
+"Human capital (edu, exper, ten)","c_edu = 0, c_exper = 0, c_ten = 0",19.4026,0.0,True
+Demographic controls,"female = 0, married = 0, nonprev = 0, c_dep = 0",7.9868,0.0,True
+Geographic controls,"metro = 0, norcen = 0, south = 0, west = 0",4.8026,0.0008,True
+IT work-groups,"itreq = 0, itprog = 0, itqual = 0, itarch = 0",7.9282,0.0,True
+IT divisions,"itrd = 0, ittech = 0",4.0128,0.0187,True
+Quadratic human capital,"c_exper_sq = 0, c_ten_sq = 0, c_edu_sq = 0",9.0532,0.0,True
+Interactions,"c_edu:female = 0, c_exper:c_edu = 0, married:female = 0, metro:c_edu = 0",3.0167,0.0178,True

@@ -1,0 +1,36 @@
+model,test,statistic,p_value,conclusion
+M4 + Job function,Jarque-Bera (residual normality),691.3623763084581,7.457057413977067e-151,residuals non-normal
+M4 + Job function,Breusch-Pagan (heteroskedasticity),22.657026969253014,0.3059472991299097,homoskedastic
+M4 + Job function,White / Wooldridge (heteroskedasticity),1.2767241073517894,0.2798175394037146,homoskedastic
+M4 + Job function,Ramsey RESET (functional form),6.10680057899018,0.013795806746558358,misspecified
+M4 + Job function,"RESET, HC3-robust",7.900600008860964,0.004941840212933183,misspecified
+M4 + Job function,Condition number of X,113.97376045826077,,"elevated, but scale-sensitive: see VIF table"
+M4 + Job function,Cook's D: share > 4/n (max D),0.051330798479087454,,max D = 0.094; no dominating observation
+M5 Full main effects,Jarque-Bera (residual normality),701.6508330176896,4.3496819141549514e-153,residuals non-normal
+M5 Full main effects,Breusch-Pagan (heteroskedasticity),23.848624165882484,0.41223006353739516,homoskedastic
+M5 Full main effects,White / Wooldridge (heteroskedasticity),1.2173594221873385,0.29684813450037795,homoskedastic
+M5 Full main effects,Ramsey RESET (functional form),6.069534045166431,0.01408825425953091,misspecified
+M5 Full main effects,"RESET, HC3-robust",7.87357951918891,0.0050162259049307744,misspecified
+M5 Full main effects,Condition number of X,114.69454521860627,,"elevated, but scale-sensitive: see VIF table"
+M5 Full main effects,Cook's D: share > 4/n (max D),0.051330798479087454,,max D = 0.093; no dominating observation
+M6 + Quadratics,Jarque-Bera (residual normality),797.611878148446,6.320934788164925e-174,residuals non-normal
+M6 + Quadratics,Breusch-Pagan (heteroskedasticity),28.36845970596041,0.34056942663677503,homoskedastic
+M6 + Quadratics,White / Wooldridge (heteroskedasticity),1.8052588392732654,0.16545498917946438,homoskedastic
+M6 + Quadratics,Ramsey RESET (functional form),6.476026834750044,0.01123456867678223,misspecified
+M6 + Quadratics,"RESET, HC3-robust",9.078730935216415,0.002585994426811031,misspecified
+M6 + Quadratics,Condition number of X,2361.9575644078027,,"elevated, but scale-sensitive: see VIF table"
+M6 + Quadratics,Cook's D: share > 4/n (max D),0.055133079847908745,,max D = 0.093; no dominating observation
+M7 + Interactions,Jarque-Bera (residual normality),948.4816620879502,1.0960338935267331e-206,residuals non-normal
+M7 + Interactions,Breusch-Pagan (heteroskedasticity),32.30258782199202,0.3535896557976583,homoskedastic
+M7 + Interactions,White / Wooldridge (heteroskedasticity),1.602586645928115,0.20236223588678104,homoskedastic
+M7 + Interactions,Ramsey RESET (functional form),6.8576432102554294,0.009097431142387808,misspecified
+M7 + Interactions,"RESET, HC3-robust",8.201239911235817,0.004186177199383753,misspecified
+M7 + Interactions,Condition number of X,2402.586704031782,,"elevated, but scale-sensitive: see VIF table"
+M7 + Interactions,Cook's D: share > 4/n (max D),0.06273764258555133,,max D = 0.096; no dominating observation
+M8 M7 with HC3 robust SE,Jarque-Bera (residual normality),948.4816620879502,1.0960338935267331e-206,residuals non-normal
+M8 M7 with HC3 robust SE,Breusch-Pagan (heteroskedasticity),32.30258782199202,0.3535896557976583,homoskedastic
+M8 M7 with HC3 robust SE,White / Wooldridge (heteroskedasticity),1.602586645928115,0.20236223588678104,homoskedastic
+M8 M7 with HC3 robust SE,Ramsey RESET (functional form),6.8576432102554294,0.009097431142387808,misspecified
+M8 M7 with HC3 robust SE,"RESET, HC3-robust",8.201239911235817,0.004186177199383753,misspecified
+M8 M7 with HC3 robust SE,Condition number of X,2402.586704031782,,"elevated, but scale-sensitive: see VIF table"
+M8 M7 with HC3 robust SE,Cook's D: share > 4/n (max D),0.06273764258555133,,max D = 0.096; no dominating observation

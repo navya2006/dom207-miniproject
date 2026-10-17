@@ -1,0 +1,11 @@
+DOM207 MP2 - cleaning summary
+=============================================
+Raw rows                       : 526
+Raw columns (incl. id)         : 25
+Non-numeric data-entry errors  : 8 cells
+Out-of-range data-entry errors : 21 cells
+Total invalid cells set to NA  : 29
+Pre-existing missing cells     : 22 cells
+Cells imputed (median/mode)    : 51 (0.40% of analytic cells)
+Rows in imputed analysis file  : 526
+Rows in complete-case file     : 482

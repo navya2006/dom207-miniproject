@@ -1,0 +1,8 @@
+regressor,F_stat_quad+cubic,p_value,evidence_of_non-linearity
+c_edu,0.9141,0.4016,False
+c_exper,1.4477,0.2361,False
+c_ten,2.2594,0.1055,False
+c_dep,0.0186,0.9816,False
+c_momed,0.4028,0.6687,False
+c_daded,0.0072,0.9928,False
+c_sib,1.426,0.2412,False

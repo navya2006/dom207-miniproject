@@ -1,0 +1,17 @@
+H#,hypothesis,term / restriction,test,expected_sign,estimate,std_error,p_value,verdict
+H1,Education raises pay,c_edu,coefficient,+,0.0678,0.0193,0.0004,Supported
+H2,Experience raises pay but with diminishing returns,c_exper,coefficient,+,0.0084,0.0021,0.0001,Supported
+H2b,The experience-pay profile is concave,c_exper_sq,coefficient,-,-0.0005,0.0001,0.0003,Supported
+H3,Firm-specific tenure raises pay,c_ten,coefficient,+,0.0184,0.0051,0.0003,Supported
+H4,Women earn less than comparable men,female,coefficient,-,-0.1366,0.0646,0.0345,Supported
+H5,Married employees earn a premium,married,coefficient,+,0.1612,0.0637,0.0114,Supported
+H6,Metro employees earn a premium,metro,coefficient,+,0.1369,0.0472,0.0037,Supported
+H7,Pay differs across IT work-groups and divisions,"itreq = 0, itprog = 0, itqual = 0, itarch = 0",joint F,+,,,0.0,Supported
+H7b,R&D and tech-support divisions shift pay,"itrd = 0, ittech = 0",joint F,+,,,0.026,Supported
+H8,Non-privileged employees earn less,nonprev,coefficient,-,-0.0438,0.0627,0.4851,Not supported
+H9,Working from home is associated with lower pay,wrkhm,coefficient,-,-0.0845,0.069,0.221,Not supported
+H9b,AI-exposed IT work is associated with lower pay,itai,coefficient,-,-0.3122,0.0797,0.0001,Supported
+H10,Parental education and siblings matter,c_momed,coefficient,+,0.0009,0.0069,0.9001,Not supported
+H11,The education premium differs by gender,c_edu:female,coefficient,-,0.0189,0.016,0.2385,Not supported
+H12,Education and experience are complements,c_exper:c_edu,coefficient,+,0.0011,0.0007,0.1071,Not supported
+H13,The marriage premium differs by gender,married:female,coefficient,-,-0.2139,0.0848,0.0116,Supported

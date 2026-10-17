@@ -1,0 +1,19 @@
+grouping,category,n,mean_sal,median_sal,sd_sal
+gender,Male,274,7.469,6.0,5.871
+gender,Female,252,4.987,3.75,5.049
+marital_status,Unmarried,206,5.294,3.75,5.412
+marital_status,Married,320,6.915,5.49,5.678
+privilege,Privileged,472,6.37,4.68,5.838
+privilege,Non-privileged,54,5.489,4.36,3.151
+location,Non-metro,146,4.871,3.975,2.827
+location,Metro,380,6.821,5.0,6.303
+work_mode,On-site,452,6.6,5.0,5.373
+work_mode,Work from home,74,4.327,3.22,6.69
+ai_exposure,No AI work,473,6.494,4.79,5.84
+ai_exposure,AI applications,53,4.369,3.5,2.417
+r_and_d,Non R&D,333,5.111,4.0,5.199
+r_and_d,IT R&D,193,8.296,6.63,5.775
+tech_support,Non tech-support,438,6.492,4.975,5.738
+tech_support,IT tech support,88,5.224,4.11,4.926
+arch_group,Non-arch,375,6.875,5.25,6.291
+arch_group,IT architecture,151,4.801,3.88,3.0
